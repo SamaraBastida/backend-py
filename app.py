@@ -154,8 +154,7 @@ def getRandomColor():
     import random
     return f"rgb({random.randint(0,255)}, {random.randint(0,255)}, {random.randint(0,255)})"
 
-#Inicialização do Banco de Dados e Servidor 
 if __name__ == '__main__':
     with app.app_context():
-        db.create_all() # Cria as tabelas se não existirem
-    app.run(debug=True, port=5000)
+        db.create_all()
+    app.run(host="0.0.0.0", port=5000)
