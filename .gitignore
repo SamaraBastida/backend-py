@@ -2,8 +2,6 @@ venv/
 env/
 ENV/
 
-.env
-
 database.db
 
 __pycache__/
@@ -12,6 +10,7 @@ __pycache__/
 *.pyd
 
 *.log
+.env
 
 .vscode/
 .idea/
